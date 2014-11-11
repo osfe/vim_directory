@@ -121,7 +121,8 @@ set smarttab
 set shiftwidth=4
 set tabstop=4
 
-set formatoptions=croqtc
+set autoindent
+set formatoptions+=tcroqn
 
 " Switch CWD to the directory of the open buffer
 map <leader>cd :cd %:p:h<cr>:pwd<cr>
