@@ -2,14 +2,15 @@
 " Date		March, 19th 2014
 " Version	0.1
 " 
+"
 " 
-" Outlinie  1. Syntax and fonts 
+" Outline  1. Syntax and fonts 
 "           2. user interface
 "           3. Edition 
 "           4. Print 
 " 
 "
-" Love vim !
+" Love vim forever and more...!
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 1. Syntax and fonts 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -21,9 +22,6 @@ filetype plugin on
 
 " filetype based indentation
 filetype indent on 
-
-" Enable syntax highlighting
-syntax enable 
 
 " Set utf8 as standard encoding and en_US as the standard language
 set encoding=utf8
