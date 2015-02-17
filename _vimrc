@@ -134,3 +134,19 @@ autocmd BufEnter * silent! lcd %:p:h
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " hardcopy
 map <C-p> :color print_bw<CR>:hardcopy > %.ps<CR>:color molokai<CR>:syn on<CR>
+
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" easy compil
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+fun! MAKE()
+    let makedir=fnamemodify(findfile('Makefile',';'),":h")
+    let olddir=pwd()
+    let newdir=findfile('Makefile',';')
+    exec "cd " . makedir 
+    make 
+    cd olddir
+endf 
+
+nnoremap <silent> <F5> :call MAKE()<CR>

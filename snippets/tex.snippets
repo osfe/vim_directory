@@ -10,7 +10,7 @@ snippet sc
 	{\scshape ${1:enter your smallcap text}}${2}
 # frame snippet
 snippet frame
-	\begin{frame}{${1:please, enter a title}}
+	\begin{frame}%{please, enter a title, if needed}
 	    \begin{columns}
 	        % -- First column, left column
 	        \column{0.5\textwidth}
@@ -130,6 +130,15 @@ snippet fige
 		\includegraphics[]{figures/${1:filename}}
 		\caption{${2:caption}\label{fig:${3:$2}}}
 	\end{figure}
+# data table 
+snippet tabe
+	\begin{table}
+	    \centering
+		    \begin{dataTable}{${1:align}}
+			\end{dataTable}
+			\caption{${2:caption}\label{tab:${3:$2}}}
+	end{table}
+# 
 snippet itd
 	\item[${1:description}] ${2:item}
 snippet figure
