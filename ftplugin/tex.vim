@@ -4,7 +4,8 @@
 fun! MAKE()
     let makedir=fnamemodify(findfile('Makefile',';'),":h")
     let olddir=getcwd()
-    execute 'cd '.makedir
+    execute 'cd '.makedir 
+    wa
     make compile
     execute 'cd '.olddir 
 endf 
