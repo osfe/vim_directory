@@ -2,15 +2,15 @@
 §  User Macros
 § ==========================================================
 
-SetMacro( 'AUTHOR',      'YOUR NAME' )
+SetMacro( 'AUTHOR',      'Olivier LEMAIRE' )
 SetMacro( 'AUTHORREF',   '' )
 SetMacro( 'COMPANY',     '' )
 SetMacro( 'COPYRIGHT',   '' )
-SetMacro( 'EMAIL',       '' )
+SetMacro( 'EMAIL',       'contact@olivier-lemaire.eu' )
 SetMacro( 'LICENSE',     '' )
 SetMacro( 'ORGANIZATION','' )
 
-SetStyle( 'C' )
+SetStyle( 'CPP' )
 
 § prefix used for Doxygen commands, '\' or '@'
 SetMacro( 'DOX_CMD', '\' )

@@ -9,25 +9,37 @@
 == Comments.end-of-line-comment == append, nomenu ==
 // <CURSOR>
 == Comments.frame == map:cfr, shortcut:f  ==
-//-----------------------------------------------------------------------------
-//  <CURSOR>
-//-----------------------------------------------------------------------------
+/* ****************************************************************************
+ * <CURSOR>
+ * ***************************************************************************/
 == Comments.function == map:cfu, shortcut:f  ==
 // ===  FUNCTION  ======================================================================
 //         Name:  |?FUNCTION_NAME|
 //  Description:  <CURSOR>
-// =====================================================================================
+// **********************************************************************
 == Comments.method == map:cme, shortcut:m  ==
-//--------------------------------------------------------------------------------------
-//       Class:  |?CLASSNAME|
-//      Method:  |?CLASSNAME| :: |?METHODNAME|
-// Description:  <CURSOR>
-//--------------------------------------------------------------------------------------
-== Comments.class == map:ccl, shortcut:c  ==
-// =====================================================================================
-//        Class:  |?CLASSNAME|
-//  Description:  <CURSOR>
-// =====================================================================================
+/*! ***************************************************************************
+ * \file   |FILENAME|
+ * \brief   |?METHODNAME|, <CURSOR>
+ * \detail 
+ * \author  |AUTHOR| (|AUTHORREF|), |EMAIL|
+ * \version 
+ * \date    |DATE|
+ * \warning 
+ * \todo 
+ * ***************************************************************************/
+== Comments.class == map:ccl, shortcut:c  == 
+
+/*! ***************************************************************************
+ * \file    |FILENAME| 
+ * \brief   <CURSOR>
+ * \detail 
+ * \author  |AUTHOR| (|AUTHORREF|), |EMAIL|
+ * \version 
+ * \date    |DATE|
+ * \warning 
+ * \todo 
+ * ***************************************************************************/
 == ENDTEMPLATE ==
 
 § -------------------------------------------------------------
@@ -37,37 +49,29 @@
 == SEP: Comments.sep_file ==
 
 == Comments.file description impl == map:cfdi, shortcut:c, start, noindent ==
-// =====================================================================================
-//
-//       Filename:  |FILENAME|
-//
-//    Description:  <CURSOR>
-//
-//        Version:  1.0
-//        Created:  |DATE| |TIME|
-//       Revision:  none
-//       Compiler:  g++
-//
-//         Author:  |AUTHOR| (|AUTHORREF|), |EMAIL|
-//   Organization:  |ORGANIZATION|
-//
-// =====================================================================================
+/*! ***************************************************************************
+ * \file    |FILENAME| 
+ * \brief   <CURSOR>
+ * \detail 
+ * \author  |AUTHOR| (|AUTHORREF|), |EMAIL|
+ * \version 0.1
+ * \date    |DATE|, |TIME|
+ * \warning 
+ * \todo 
+ * \copyright GNU Public License.
+ * ***************************************************************************/
 == Comments.file description header == map:cfdh, shortcut:h, start, noindent ==
-// =====================================================================================
-//
-//       Filename:  |FILENAME|
-//
-//    Description:  <CURSOR>
-//
-//        Version:  1.0
-//        Created:  |DATE| |TIME|
-//       Revision:  none
-//       Compiler:  g++
-//
-//         Author:  |AUTHOR| (|AUTHORREF|), |EMAIL|
-//   Organization:  |ORGANIZATION|
-//
-// =====================================================================================
+/*! ***************************************************************************
+ * \file    |FILENAME| 
+ * \brief   <CURSOR>
+ * \detail 
+ * \author  |AUTHOR| (|AUTHORREF|), |EMAIL|
+ * \version 0.1
+ * \date    |DATE|, |TIME|
+ * \warning 
+ * \todo 
+ * \copyright GNU Public License.
+ * ***************************************************************************/
 == ENDTEMPLATE ==
 
 == LIST: comments_c_sections == hash ==
