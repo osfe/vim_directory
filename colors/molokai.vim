@@ -82,10 +82,10 @@ hi SpecialComment  guifg=#465457               gui=bold
 hi Special         guifg=#66D9EF guibg=bg      gui=italic
 hi SpecialKey      guifg=#888A85               gui=italic
 if has("spell")
-    hi SpellBad    guisp=#FF0000 gui=undercurl
-    hi SpellCap    guisp=#7070F0 gui=undercurl
-    hi SpellLocal  guisp=#70F0F0 gui=undercurl
-    hi SpellRare   guisp=#FFFFFF gui=undercurl
+    hi SpellBad    guifg=red gui=underline 
+    hi SpellCap    guifg=blue gui=underline  
+    hi SpellLocal  guifg=green gui=underline  
+    hi SpellRare   guifg=purple gui=underline  
 endif
 hi Statement       guifg=#F92672               gui=bold
 hi StatusLine      guifg=#455354 guibg=fg
@@ -182,6 +182,13 @@ if &t_Co > 255
    hi SpecialComment  ctermfg=245               cterm=bold
    hi Special         ctermfg=81  ctermbg=232
    hi SpecialKey      ctermfg=245
+
+    if has("spell")
+        hi SpellBad    ctermfg=red     ctermbg=233  cterm=underline 
+        hi SpellCap    ctermfg=blue    ctermbg=233  cterm=underline  
+        hi SpellLocal  ctermfg=green   ctermbg=233  cterm=underline  
+        hi SpellRare   ctermfg=cyan    ctermbg=233  cterm=underline  
+    endif 
 
    hi Statement       ctermfg=161               cterm=bold
    hi StatusLine      ctermfg=238 ctermbg=253
