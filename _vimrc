@@ -150,3 +150,8 @@ fun! MAKE()
 endf 
 
 nnoremap <silent> <F5> :call MAKE()<CR>
+
+if match($TERM, "screen")!=-1
+    set term=xterm
+endif
+
