@@ -6,7 +6,7 @@ fun! MAKE()
     let olddir=getcwd()
     execute 'cd '.makedir 
     wa
-    make compile
+    make! compile
     execute 'cd '.olddir 
 endf 
 
